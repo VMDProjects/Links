@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dashboard</h1>
+        <div class="filter">
+            <input type="text" id="filterInput" placeholder="هرچی بنویسی اینجا، فیلتر میشه">
+            <button onclick="applyFilter()">Apply Filter</button>
+        </div>
+        <div class="form-container">
+            <h2>Add New Row</h2>
+            <form id="addRowForm">
+                <input type="text" id="link" placeholder="Link" required>
+                <input type="text" id="owner" placeholder="Owner" required>
+                <input type="text" id="description" placeholder="Description" required>
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="number" id="number" placeholder="#" required>
+                <button type="submit">Add Row</button>
+            </form>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Link</th>
+                    <th>Owner</th>
+                    <th>Description</th>
+                    <th>Name</th>
+                    <th>#</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <tr>
+                    <td><a href="#">Click</a></td>
+                    <td>Amin</td>
+                    <td>دیتاهای مهم وندرهای اکتیو در یک ماه گذشته</td>
+                    <td>Master Query</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
